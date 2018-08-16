@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta charset="utf-8">
+  <title>torah.io</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="style.css">
+  <style>
+  .centered{position: fixed;
+       /* or absolute */
+       top: 50%;
+       left: 50%;
+       /* bring your own prefixes */
+       transform: translate(-50%, -50%);}
+   </style>
+ </head>
+
+ <body onresize="myFunction()">
+   <div id="particles-js">
+   </div>
+   <script src="./particles.js"></script>
+   <script src="./app.js"></script>
+   <div class="centered" style="color: white; text-align: center">
+     <h1 id="h" style="font-size: 125px; margin-bottom: 50px; margin-top: 50px;">torah.io</h1>
+     <h3 style="letter-spacing: 25px; margin-bottom: 25px;">WISDOM & MORE</h3>
+     <button class="button button5">LogIn/ SignUp</button>
+   </div>
+ </body>
+ <script>
+  window.onload=function(){
+    myFunction();
+  };
+  function myFunction(){
+    var w=screen.width;
+    if (w <=425){
+      document.getElementById("h").style.fontSize="75px";
+    }
+    else{
+      document.getElementById("h").style.fontSize="125px";
+    }
+  }
+</script>
+</html>
